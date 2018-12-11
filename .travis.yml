@@ -2,7 +2,7 @@ sudo: required
 services:
   - docker
 
-before _install:
+before_install:
   - docker build -t dayys/react-docker-app -f Dockerfile.dev .
 
 script:
